@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Form
+{% endblock %}
+{% block content %}
+    <h1>Registration form:</h1>
+    <form action="" method="">
+        <label>Your Name:</label>
+        <input type="text" name="name">
+        <label>My Age:</label>
+        <input type="text" name="age">
+        <label>My Password:</label>
+        <input type="password" name="password">
+    </form>
+    <img src="{% static 'images/animation.jpg' %}" width="500px">
+    <button type="button" onclick="clicked()">Click me</button>
+    <script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

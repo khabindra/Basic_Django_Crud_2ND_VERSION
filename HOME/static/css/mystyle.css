@@ -1,0 +1,121 @@
+/* mystyles.css */
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Table Styles */
+table {
+    margin: 20px;
+}
+
+table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+table td {
+    text-align: center;
+}
+
+/* Card Styles */
+.card {
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.card-header {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Button Styles */
+.btn {
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: #DC3545;
+}
+
+.btn-warning {
+    background-color: #FFC107;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+}
+
+/* Miscellaneous Styles */
+h1 {
+    color: #007BFF;
+}
+
+
+h2 {
+    color: #007BFF;
+}
+body {
+    font-family: 'Your Selected Font', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.call-to-action {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}
+Show-Data  
+{% endblock %}
+{% block content %}
+{% for message in messages %} 
+{{message}}
+{% endfor %}
+<table  class="table table-dark table-striped-columns" >
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">EMAIL</th>
+        <th scope="col">PASSWORD</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in details %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.password}}</td>
+            <td>
+                <a href="{% url 'delete' i.pk %}" class="btn btn-danger"> Delete </a>
+                <a href="{% url 'edit' i.id %}"  class="btn btn-warning"> Edit </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+
+
+
+
+

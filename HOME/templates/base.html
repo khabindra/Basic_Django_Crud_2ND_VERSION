@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Your+Selected+Font" rel="stylesheet">
+
+</head>
+<title>{% block title  %}
+    BASE PAGE
+    {% endblock %}
+</title>
+
+
+<body>
+    <div class="container mt-5">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register' %}">Registration Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'showdata' %}">Show Data</a>
+                    </li>
+                    <li class "nav-item">
+                        <a class="nav-link" href="{% url 'form' %}">Form Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        {% block content %}
+            
+        {% endblock %}
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
